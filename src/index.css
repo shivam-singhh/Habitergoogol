@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 96%;
+    --foreground: 220 20% 16%;
+
+    --card: 40 30% 98%;
+    --card-foreground: 220 20% 16%;
+
+    --popover: 40 30% 98%;
+    --popover-foreground: 220 20% 16%;
+
+    --primary: 152 32% 28%;
+    --primary-foreground: 40 33% 96%;
+
+    --secondary: 40 20% 91%;
+    --secondary-foreground: 220 20% 16%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 36 80% 56%;
+    --accent-foreground: 220 20% 12%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 40 33% 96%;
+
+    --border: 40 18% 88%;
+    --input: 40 18% 88%;
+    --ring: 152 32% 28%;
+
+    --radius: 1rem;
+
+    --sidebar-background: 40 30% 97%;
+    --sidebar-foreground: 220 20% 16%;
+    --sidebar-primary: 152 32% 28%;
+    --sidebar-primary-foreground: 40 33% 96%;
+    --sidebar-accent: 40 20% 91%;
+    --sidebar-accent-foreground: 220 20% 16%;
+    --sidebar-border: 40 18% 88%;
+    --sidebar-ring: 152 32% 28%;
+
+    /* Custom tokens */
+    --coach: 152 25% 94%;
+    --coach-foreground: 152 32% 22%;
+    --coach-border: 152 20% 85%;
+    --habit-complete: 152 40% 42%;
+    --habit-missed: 20 60% 55%;
+    --warm-glow: 36 80% 56%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 40 20% 92%;
+
+    --card: 220 18% 13%;
+    --card-foreground: 40 20% 92%;
+
+    --popover: 220 18% 13%;
+    --popover-foreground: 40 20% 92%;
+
+    --primary: 152 35% 45%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 220 15% 18%;
+    --secondary-foreground: 40 20% 92%;
+
+    --muted: 220 12% 20%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 36 70% 50%;
+    --accent-foreground: 220 20% 10%;
+
+    --destructive: 0 50% 45%;
+    --destructive-foreground: 40 20% 92%;
+
+    --border: 220 12% 20%;
+    --input: 220 12% 20%;
+    --ring: 152 35% 45%;
+
+    --coach: 152 20% 15%;
+    --coach-foreground: 152 30% 70%;
+    --coach-border: 152 15% 25%;
+    --habit-complete: 152 40% 50%;
+    --habit-missed: 20 50% 50%;
+    --warm-glow: 36 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'DM Serif Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'DM Serif Display', serif;
+  }
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
